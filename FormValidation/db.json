@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "name": "le van hoang"
+    },
+    {
+      "id": 1,
+      "name": "Tran Huu Cung"
+    },
+    {
+      "name": "le dinh duy",
+      "email": "duyleitbka95@gmail.com",
+      "username": "duyleomessi",
+      "age": 23,
+      "sex": "male",
+      "password": "afdjkajfdl",
+      "id": 2
+    },
+    {
+      "name": "le dinh duy",
+      "email": "duyleitbka95@gmail.com",
+      "username": "duyleomessi",
+      "age": 97,
+      "sex": "male",
+      "password": "jasdfasb",
+      "id": 3
+    }
+  ]
+}
