@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="codecraft">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!-- THe above 3 meta tags *must* come first in the head; any other head content
+    must come *after* these tags -->
+    <title>Submitform</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+</head>
+
+<body>
+
+<div class="container main-content">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="root" ng-controller="RootController">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" ng-model="data.name">
+                    </div>
+                </form>
+
+                <div class="parent" ng-controller="ParentController">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <input type="text" ng-model="data.name" class="form-control">
+                        </div>
+                    </form>
+                    <p>{{ data.name }}</p>
+
+                    <div class="child" ng-controller="ChildController">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <input type="text" class="form-control" ng-model="data.name">
+                            </div>
+                            <button class="btn btn-primary" ng-click="reset()">Reset</button>
+                        </form>
+                        <p>{{ data.name }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div style="display: none; position: fixed; top: 0px; left: 0px; z-index: 60000;">
+    <img style="display: block; position: absolute;">
+    <div style="display: block; position: absolute; background-color: rgba(0, 0, 0, 0.34902);"></div>
+    <canvas width="120" height="60" style="position: absolute; cursor: crosshair; padding: 0px; margin: 0px;"></canvas>
+    <canvas style="position: fixed; top: 20px; right: 20px;"></canvas>
+</div>
+
+<script src="js/angular.min.js"></script>
+<!-- <script src="js/angular-ui-router.min.js"></script>
+<script src="js/angular-resource.min.js"></script> -->
+<script src="js/main.js"></script>
+</body>
+</html>

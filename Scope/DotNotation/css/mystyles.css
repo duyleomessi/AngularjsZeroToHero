@@ -1,0 +1,19 @@
+body {
+    margin: 40px;
+}
+
+.root {
+    padding: 50px 30px;
+    background: #8c8c8c;
+}
+
+.parent {
+    padding: 50px 30px;
+    background: #056F7F;
+}
+
+.child {
+    margin-top: 50px;
+    padding: 20px 20px;
+    background: #2b542c;
+}
